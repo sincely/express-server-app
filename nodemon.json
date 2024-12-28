@@ -1,0 +1,23 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", ".svn", "node_modules/**/node_modules"],
+  "verbose": true,
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": [],
+  "env": {
+    "NODE_ENV": "production",
+    "REMOTE_ADDR": ""
+  },
+  "env_dev": {
+    "NODE_ENV": "development",
+    "REMOTE_ADDR": ""
+  },
+  "env_test": {
+    "NODE_ENV": "test",
+    "REMOTE_ADDR": ""
+  },
+
+  "ext": "ejs js json"
+}
