@@ -1,5 +1,5 @@
 const express = require('express')
-const router = express.Router() //模块化路由
+const router = express.Router()
 //注入验证模块
 const jwtAuth = require('../utils/auth')
 

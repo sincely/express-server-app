@@ -1,4 +1,5 @@
 const mysql = require('mysql')
+// 创建数据库连接
 const pool = mysql.createPool({
   connectionLimit: 10, // 最大连接数，默认为10
   host: 'localhost', // 数据库服务器地址
