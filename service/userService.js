@@ -1,6 +1,7 @@
-// 新增
-// exports.userAll = `SELECT * FROM user;`
+// 对数据库中的 user 表进行增，删，查操作语句
 module.exports = {
+  // 查询所有用户
+  getUserAll: `SELECT * FROM tb_user`,
   // 查询用户
   userAll: `SELECT * FROM user WHERE name  LIKE 'T%'`,
   // 新增用户

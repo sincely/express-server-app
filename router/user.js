@@ -11,9 +11,9 @@ router.post('/upload', upload, (req, res) => {
   console.log('req', req.file)
   res.send('上传成功')
 })
-
+router.get('/user/getAllUser', userController.getAllUser)
 router.get('/user/json', userController.getJson)
-router.post('/user/getUserId', userController.getuserById)
+router.get('/user/getUserId', userController.getuserById)
 router.post('/user/addUser', userController.addUser)
 router.post('/user/updateUser', userController.updateUser)
 router.post('/user/deleteUser', userController.deleteUser)
