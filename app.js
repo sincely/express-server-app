@@ -12,7 +12,7 @@ const helmet = require('helmet')
 // 第三方跨域中间件
 const cors = require('cors')
 // 端口号
-const port = 3000
+const port = 4000
 const multipart = require('connect-multiparty')
 // 引入路由
 const router = require('./router')

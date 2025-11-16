@@ -8,7 +8,7 @@ const router = express.Router()
 router.use(require('./user'))
 
 // 登录相关路由模块
-router.use(require('./login'))
+// router.use(require('./login'))
 
 // 导出路由实例
 module.exports = router
