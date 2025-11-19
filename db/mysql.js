@@ -35,9 +35,10 @@ async function query(sql, params) {
 async function getConnection() {
   try {
     const connection = await pool.getConnection()
+    // console.log(`✅ 数据库连接成功（环境：${env}，数据库：${dbConfig.database}`)
     return connection
   } catch (error) {
-    console.error('Database connection error:', error)
+    // console.error(`❌ 数据库连接失败（环境：${env}）：`, err.message)
     throw error
   }
 }
